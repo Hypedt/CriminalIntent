@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import java.util.*
+import java.util.Calendar.HOUR_OF_DAY
+import java.util.Calendar.MINUTE
 
 private const val ARG_DATE = "date"
 
@@ -31,6 +33,7 @@ class DatePickerFragment : DialogFragment() {
         val initialYear = calendar.get(Calendar.YEAR)
         val initialMonth = calendar.get(Calendar.MONTH)
         val initialDay = calendar.get(Calendar.DAY_OF_MONTH)
+
 
         return DatePickerDialog(
                 requireContext(),
